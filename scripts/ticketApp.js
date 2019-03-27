@@ -36,11 +36,13 @@ const app = new Vue({
     },
     ticketDescription: function() {
       let readableTicketType = 'General Admission';
+
       if (this.ticketType === 'vip') {
         readableTicketType = 'VIP';
       }
 
       let ticketPluralization = 'tickets';
+
       if (this.ticketQuantity === 1) {
         ticketPluralization = 'ticket';
       }
