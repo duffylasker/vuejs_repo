@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Ticketbox</title>
-<!-- <link rel="stylesheet" type="text/css" href="./css/reset.css"> -->
   <link rel="stylesheet" type="text/css" href="./css/ticket-styles.css">
   <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
@@ -15,7 +14,7 @@
       <img class="logo" src="https://s3.amazonaws.com/codecademy-content/courses/vue-instances/ticket_logo.svg" alt="logo">
       <h1>TICKETBOX</h1>
     </header>
-    <form v-on:reset="resetFields" v-on:submit.prevent="submitForm">
+    <form v-on:reset="resetFields" v-on:submit.prevent>
       <div class="form-row">
         <div class="form-field">
           <label for="first-name">First Name</label>
